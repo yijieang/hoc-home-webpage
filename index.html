@@ -228,8 +228,8 @@
   .cat-imgs { display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .cat-imgs.single { grid-template-columns: 1fr; }
   .cat-imgs > div { border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; }
-  .cat-imgs.single > div { aspect-ratio: 16/10; }
-  .cat-imgs img { display:block; width:100%; height:100%; object-fit:cover; }
+  .cat-imgs.single > div { aspect-ratio: auto; }
+  .cat-imgs img { display:block; width:100%; height:auto; }
 
   .catalogue-cta {
     margin-top: 60px; padding: 46px 40px; border-radius: 10px;
