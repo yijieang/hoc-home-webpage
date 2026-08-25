@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "eyebrow": "Fresh Produce Supplier · Est. 2020",
+    "title_pre": "Where freshness ",
+    "title_em": "meets",
+    "title_post": " legacy.",
+    "subtitle": "House of Cai supplies premium vegetables, herbs and fruits to horeca and others across Singapore and Malaysia — with the reliability of a supplier that's been doing this since 2020."
+  },
+  "whatsapp": {
+    "number": "+65 8756 1502",
+    "message": "Hi House of Cai! May I have your full catalogue and learn more about your company?"
+  },
+  "catalogue": {
+    "product_pdf": "assets/HOC-Product-Catalogue.pdf",
+    "processed_pdf": "assets/HOC-Processed-Products-Catalogue.pdf"
+  },
+  "contact": {
+    "singapore": {
+      "address": "17 Wholesale Centre,<br>#01-112, Singapore 110017",
+      "phone": "+65 8756 1502",
+      "hours": "Everyday: 8:30AM – 8:30PM"
+    },
+    "malaysia": {
+      "address": "32, Jalan Cemerlang Lancar 2, Taman Cemerlang, Lancar, Saleng, 81400 Senai, Johor",
+      "phone": "+60 18 9617 958",
+      "hours": "Mon – Sat: 8:30AM – 8:30PM · Sun: Closed"
+    }
+  }
+}

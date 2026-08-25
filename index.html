@@ -355,6 +355,7 @@
   }
 </style>
   <script type="text/javascript" src="https://t.houseofcai.com/package/latest/a27d5325-42b9-4ff1-8c09-b80cfd2a91d9/" async></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -383,7 +384,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.4 2.2 2 3.8 4.5 4v3c-1.6 0-3.1-.5-4.5-1.4v6.6a5.9 5.9 0 11-5.9-5.9c.3 0 .6 0 .9.1v3.1a2.8 2.8 0 102 2.7V3h3z"/></svg>
         </a>
       </div>
-      <a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px;">WhatsApp Us</a>
+      <a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" data-field-wa-href target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px;">WhatsApp Us</a>
       <button class="burger" aria-label="Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
         <span></span>
       </button>
@@ -404,9 +405,9 @@
 <section class="hero">
   <div class="wrap hero-content">
     <div class="hero-inner">
-      <p class="eyebrow">Fresh Produce Supplier · Est. 2020</p>
-      <h1>Where freshness <em>meets</em> legacy.</h1>
-      <p>House of Cai supplies premium vegetables, herbs and fruits to horeca and others across Singapore and Malaysia — with the reliability of a supplier that's been doing this since 2020.</p>
+      <p class="eyebrow" data-field="hero.eyebrow">Fresh Produce Supplier · Est. 2020</p>
+      <h1><span data-field="hero.title_pre">Where freshness </span><em data-field="hero.title_em">meets</em><span data-field="hero.title_post"> legacy.</span></h1>
+      <p data-field="hero.subtitle">House of Cai supplies premium vegetables, herbs and fruits to horeca and others across Singapore and Malaysia — with the reliability of a supplier that's been doing this since 2020.</p>
       <div class="hero-ctas">
         <a href="#catalogue" class="btn btn-primary">View Catalogue</a>
         <a href="#about" class="btn btn-ghost">Discover Our Roots</a>
@@ -592,8 +593,8 @@
         <p>We have two catalogues — Ready to Eat and Processed Items — with full details on packaging, formats and availability. Or contact us directly for custom cuts and bulk orders.</p>
       </div>
       <div class="ctas">
-        <a href="assets/HOC-Product-Catalogue.pdf" target="_blank" rel="noopener" class="btn btn-dark">Product Catalogue (PDF)</a>
-        <a href="assets/HOC-Processed-Products-Catalogue.pdf" target="_blank" rel="noopener" class="btn btn-dark">Processed Items Catalogue (PDF)</a>
+        <a href="assets/HOC-Product-Catalogue.pdf" data-field="catalogue.product_pdf" data-field-target="href" target="_blank" rel="noopener" class="btn btn-dark">Product Catalogue (PDF)</a>
+        <a href="assets/HOC-Processed-Products-Catalogue.pdf" data-field="catalogue.processed_pdf" data-field-target="href" target="_blank" rel="noopener" class="btn btn-dark">Processed Items Catalogue (PDF)</a>
         <a href="#contact" class="btn btn-ghost">Contact Us</a>
       </div>
     </div>
@@ -645,9 +646,9 @@
       <div class="factory-card">
         <div class="factory-flag">🇸🇬 Singapore</div>
         <h3>Head Office &amp; Warehouse</h3>
-        <div class="factory-row"><span class="label">Address</span><span>17 Wholesale Centre,<br>#01-112, Singapore 110017</span></div>
-        <div class="factory-row"><span class="label">Phone</span><a href="tel:+6587561502">+65 8756 1502</a></div>
-        <div class="factory-row"><span class="label">Hours</span><span>Everyday: 8:30AM – 8:30PM</span></div>
+        <div class="factory-row"><span class="label">Address</span><span data-field="contact.singapore.address" data-field-target="html">17 Wholesale Centre,<br>#01-112, Singapore 110017</span></div>
+        <div class="factory-row"><span class="label">Phone</span><a href="tel:+6587561502" data-field="contact.singapore.phone" data-field-tel>+65 8756 1502</a></div>
+        <div class="factory-row"><span class="label">Hours</span><span data-field="contact.singapore.hours">Everyday: 8:30AM – 8:30PM</span></div>
         <div class="factory-map-embed">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8177154493383!2d103.7777326!3d1.283221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1b668a9e5973%3A0xb44677e5b62ed080!2sHOUSE%20OF%20CAI%20PTE.%20LTD.!5e0!3m2!1sen!2smy!4v1753411930162!5m2!1sen!2smy" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="House of Cai Singapore location map"></iframe>
         </div>
@@ -656,9 +657,9 @@
       <div class="factory-card">
         <div class="factory-flag">🇲🇾 Malaysia</div>
         <h3>Processing Factory</h3>
-        <div class="factory-row"><span class="label">Address</span><span>32, Jalan Cemerlang Lancar 2, Taman Cemerlang, Lancar, Saleng, 81400 Senai, Johor</span></div>
-        <div class="factory-row"><span class="label">Phone</span><a href="tel:+60189617958">+60 18 9617 958</a></div>
-        <div class="factory-row"><span class="label">Hours</span><span>Mon – Sat: 8:30AM – 8:30PM · Sun: Closed</span></div>
+        <div class="factory-row"><span class="label">Address</span><span data-field="contact.malaysia.address" data-field-target="html">32, Jalan Cemerlang Lancar 2, Taman Cemerlang, Lancar, Saleng, 81400 Senai, Johor</span></div>
+        <div class="factory-row"><span class="label">Phone</span><a href="tel:+60189617958" data-field="contact.malaysia.phone" data-field-tel>+60 18 9617 958</a></div>
+        <div class="factory-row"><span class="label">Hours</span><span data-field="contact.malaysia.hours">Mon – Sat: 8:30AM – 8:30PM · Sun: Closed</span></div>
         <div class="factory-map-embed">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2124816683086!2d103.63495379999999!3d1.6256483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da71001e8b89b3%3A0xe7b4f7e8a9e2247c!2sHouse%20of%20Cai%20pte%20ltd!5e0!3m2!1sen!2smy!4v1753412098860!5m2!1sen!2smy" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="House of Cai Malaysia location map"></iframe>
         </div>
@@ -684,9 +685,9 @@
     </div>
     <div class="contact-inner">
     <div>
-      <a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" target="_blank" rel="noopener" class="wa-btn">
+      <a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" data-field-wa-href target="_blank" rel="noopener" class="wa-btn">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1120.2 12 8.2 8.2 0 0112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.7 6.7 0 01-2-1.2 7.4 7.4 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4a.5.5 0 000-.5c-.1-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 00-.7.3 2.7 2.7 0 00-.8 2 4.7 4.7 0 001 2.5 10.7 10.7 0 004.1 3.6c.6.2 1 .4 1.4.5a3.4 3.4 0 001.5.1 2.5 2.5 0 001.6-1.1 2 2 0 00.1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
-        WhatsApp +65 8756 1502
+        WhatsApp <span data-field="whatsapp.number">+65 8756 1502</span>
       </a>
       <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="hoc-contact-form">
         <input type="hidden" name="form-name" value="contact">
@@ -711,15 +712,15 @@
     <div class="contact-card">
       <h4 style="font-family:var(--font-display); font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:var(--cai-red); margin-bottom:8px;">Singapore</h4>
       <div class="contact-detail">
-        <div class="row"><span class="k">Address</span><span>17 Wholesale Centre,<br>#01-112, Singapore 110017</span></div>
-        <div class="row"><span class="k">Phone</span><a href="tel:+6587561502">+65 8756 1502</a></div>
-        <div class="row"><span class="k">Hours</span><span>Everyday: 8:30AM – 8:30PM</span></div>
+        <div class="row"><span class="k">Address</span><span data-field="contact.singapore.address" data-field-target="html">17 Wholesale Centre,<br>#01-112, Singapore 110017</span></div>
+        <div class="row"><span class="k">Phone</span><a href="tel:+6587561502" data-field="contact.singapore.phone" data-field-tel>+65 8756 1502</a></div>
+        <div class="row"><span class="k">Hours</span><span data-field="contact.singapore.hours">Everyday: 8:30AM – 8:30PM</span></div>
       </div>
       <h4 style="font-family:var(--font-display); font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:var(--cai-red); margin:26px 0 8px;">Malaysia</h4>
       <div class="contact-detail">
-        <div class="row"><span class="k">Address</span><span>32, Jalan Cemerlang Lancar 2, Taman Cemerlang, Lancar, Saleng, 81400 Senai, Johor</span></div>
-        <div class="row"><span class="k">Phone</span><a href="tel:+60189617958">+60 18 9617 958</a></div>
-        <div class="row"><span class="k">Hours</span><span>Mon – Sat: 8:30AM – 8:30PM · Sun: Closed</span></div>
+        <div class="row"><span class="k">Address</span><span data-field="contact.malaysia.address" data-field-target="html">32, Jalan Cemerlang Lancar 2, Taman Cemerlang, Lancar, Saleng, 81400 Senai, Johor</span></div>
+        <div class="row"><span class="k">Phone</span><a href="tel:+60189617958" data-field="contact.malaysia.phone" data-field-tel>+60 18 9617 958</a></div>
+        <div class="row"><span class="k">Hours</span><span data-field="contact.malaysia.hours">Mon – Sat: 8:30AM – 8:30PM · Sun: Closed</span></div>
       </div>
     </div>
   </div>
@@ -750,9 +751,9 @@
       <div>
         <h5>Get In Touch</h5>
         <ul>
-          <li><a href="tel:+6587561502">+65 8756 1502 (SG)</a></li>
-          <li><a href="tel:+60189617958">+60 18 9617 958 (MY)</a></li>
-          <li><a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          <li><a href="tel:+6587561502" data-field="contact.singapore.phone" data-field-tel>+65 8756 1502</a> (SG)</li>
+          <li><a href="tel:+60189617958" data-field="contact.malaysia.phone" data-field-tel>+60 18 9617 958</a> (MY)</li>
+          <li><a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" data-field-wa-href target="_blank" rel="noopener">WhatsApp Us</a></li>
         </ul>
       </div>
     </div>
@@ -771,7 +772,7 @@
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/6587561502?text=Hi%20House%20of%20Cai%21%20May%20I%20have%20your%20full%20catalogue%20and%20learn%20more%20about%20your%20company%3F" data-field-wa-href target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1120.2 12 8.2 8.2 0 0112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.7 6.7 0 01-2-1.2 7.4 7.4 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4a.5.5 0 000-.5c-.1-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a.9.9 0 00-.7.3 2.7 2.7 0 00-.8 2 4.7 4.7 0 001 2.5 10.7 10.7 0 004.1 3.6c.6.2 1 .4 1.4.5a3.4 3.4 0 001.5.1 2.5 2.5 0 001.6-1.1 2 2 0 00.1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
 </a>
 
@@ -824,6 +825,14 @@
       });
     });
   })();
+</script>
+<script src="assets/content-loader.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", function () {
+      document.location.href = "/admin/";
+    });
+  }
 </script>
 </body>
 </html>

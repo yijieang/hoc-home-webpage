@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where images uploaded through the CMS get stored
+media_folder: "assets/images/cms-uploads"
+public_folder: "assets/images/cms-uploads"
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - file: "content.json"
+        label: "House of Cai — Site Content"
+        name: "content"
+        fields:
+          - label: "Hero Section (top banner)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow tag", name: "eyebrow", widget: "string" }
+              - { label: "Title — part before the emphasized word", name: "title_pre", widget: "string" }
+              - { label: "Title — emphasized word", name: "title_em", widget: "string" }
+              - { label: "Title — part after the emphasized word", name: "title_post", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+
+          - label: "WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            fields:
+              - { label: "Number (with country code, e.g. +65 8756 1502)", name: "number", widget: "string" }
+              - { label: "Default pre-filled message", name: "message", widget: "text" }
+
+          - label: "Catalogue PDFs"
+            name: "catalogue"
+            widget: "object"
+            fields:
+              - { label: "Product Catalogue — file path", name: "product_pdf", widget: "string", hint: "Upload the new PDF to the repo's assets/ folder first (ask Claude), then update this path." }
+              - { label: "Processed Items Catalogue — file path", name: "processed_pdf", widget: "string", hint: "Upload the new PDF to the repo's assets/ folder first (ask Claude), then update this path." }
+
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Singapore"
+                name: "singapore"
+                widget: "object"
+                fields:
+                  - { label: "Address (use <br> for a line break)", name: "address", widget: "string" }
+                  - { label: "Phone (with country code, e.g. +65 8756 1502)", name: "phone", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
+              - label: "Malaysia"
+                name: "malaysia"
+                widget: "object"
+                fields:
+                  - { label: "Address (use <br> for a line break)", name: "address", widget: "string" }
+                  - { label: "Phone (with country code, e.g. +60 18 9617 958)", name: "phone", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
