@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: yijieang/hoc-home-webpage
   branch: main
 
 # Where images uploaded through the CMS get stored
